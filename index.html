@@ -50,7 +50,12 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title"> Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="btn" type="button">Заказать услугу</button>
+                <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal" >
+                    <button class="btn-close" data-modal-close ></button>
+                </div>
             </div>
         </section>
         <section class="section">
@@ -101,13 +106,25 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="section-list galery">
                     <li class="item">
-                        <a class="link" href=""><img src="images/img1.jpg"  width="370" alt="Картинка 1"></a>
+                        <a class="link" href=""><img src="images/img1.jpg"  width="370" alt="Картинка 1">
+                            <div class="description">
+                                <h3 class="text-description">Десктопные приложения</h3>
+                            </div>
+                        </a>
                     </li>
                     <li class="item">
-                        <a class="link" href=""><img src="images/img2.jpg"  width="370" alt="Картинка 2"></a>
+                        <a class="link" href=""><img src="images/img2.jpg"  width="370" alt="Картинка 2">
+                            <div class="description">
+                                <h3 class="text-description">Мобильные приложения</h3>
+                            </div>
+                        </a>                     
                     </li>
                     <li class="item">
-                        <a class="link" href=""><img src="images/img3.jpg"  width="370" alt="Картинка 3"></a>
+                        <a class="link" href=""><img src="images/img3.jpg"  width="370" alt="Картинка 3">
+                            <div class="description">
+                                <h3 class="text-description">Дизайнерские решения</h3>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -330,7 +347,7 @@
             </div>
         </div>
     </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
